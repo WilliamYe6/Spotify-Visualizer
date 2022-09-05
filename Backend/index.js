@@ -4,17 +4,6 @@ const port = 8888
 const queryString = require("query-string");
 const axios = require("axios");
 
-//const SpotifyWebApi = require('spotify-web-api-node');
-//scopes = ['user-read-private', 'user-read-email','playlist-modify-public','playlist-modify-private']
-
-/*const spotifyApi = new SpotifyWebApi({
-    clientId: '13c6a1850e5d4dd2814971fbac941087',
-    clientSecret: '8a487f195ac345b0afb281e832d074f9',
-    redirectUri: 'http://localhost:8888/callback',
-  });
-*/
-
-
 app.listen(port, () => {
   console.log(`App is listening on port ${port}`);
 });
