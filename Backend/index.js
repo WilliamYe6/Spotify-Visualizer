@@ -8,12 +8,7 @@ const path = require('path');
 
 const app = express()
 
-/* Import config */
-dotenv.config({path: path.resolve(__dirname, '.env')});
 
-/* Set Security Configs */
-app.use(helmet());
-app.use(hpp());
 
 /* Set Cookie Settings */
 app.use(
