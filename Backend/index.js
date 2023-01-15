@@ -8,7 +8,8 @@ const path = require('path');
 
 const app = express()
 
-
+/* Import config */
+dotenv.config({path: path.resolve(__dirname, '.env')});
 
 /* Set Cookie Settings */
 app.use(
