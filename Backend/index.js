@@ -11,6 +11,10 @@ const app = express()
 /* Import config */
 dotenv.config({path: path.resolve(__dirname, '.env')});
 
+/* Set Security Configs */
+app.use(helmet());
+app.use(hpp());
+
 /* Set Cookie Settings */
 app.use(
     session({
@@ -21,6 +25,10 @@ app.use(
 );
 app.use(csurf());
 
+
+const authRoutes = require('./routes/auth');
+
+app.use('/auth', authRoutes);
 
 app.listen(8080, () => {
     console.log("I'm listening!");
